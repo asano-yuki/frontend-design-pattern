@@ -1,18 +1,18 @@
-class Dog {
-  name: string
+namespace Prototype {
+  export class Dog {
+    name: string
 
-  constructor(name: string) {
-    this.name = name
-  }
+    constructor(name: string) {
+      this.name = name
+    }
 
-  bark() {
-    return 'Woof!'
+    bark() {
+      return 'Woof!'
+    }
   }
 }
 
-const dog1 = new Dog('Daisy')
-const dog2 = new Dog('Max')
-const dog3 = new Dog('Spot')
+const dog1 = new Prototype.Dog('Daisy')
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-ignore
