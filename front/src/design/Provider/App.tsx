@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <h1>Provider Pattern</h1>
-      <p>theme: {theme}</p>
+      <p data-testid='theme'>theme: {theme}</p>
       <button onClick={() => setTheme('default')}>change default</button>
       <button onClick={() => setTheme('dark')}>change dark</button>
     </>
